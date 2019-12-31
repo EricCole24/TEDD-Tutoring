@@ -51,7 +51,7 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search for Classes or Tutors" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search for Classes or Tutors" aria-label="Search" name="srch">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
@@ -73,46 +73,46 @@
               <form>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                      <label for="inputEmail4">First Name</label>
-                      <input type="email" class="form-control" id="inputFirstName", placeholder="First Name">
+                      <label for="inputFirstName">First Name</label>
+                      <input type="email" class="form-control" id="inputFirstName" placeholder="First Name" name="firstname">
                     </div>
                     <div class="form-group col-md-6">
-                      <label for="inputPassword4">Last name</label>
-                      <input type="password" class="form-control" id="inputLastname", placeholder="Last Name">
+                      <label for="inputLastname">Last name</label>
+                      <input type="password" class="form-control" id="inputLastname" placeholder="Last Name" name="lastname">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Student Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email" name="email">
                     <div class="form-check">
                 </div>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password 8-10 Charcters long">
-                    <small id="passwordHelp" class="form-text text-muted">Charcacters muct include at least one uppercase letter, one Lowercase letter, number 
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password 8-10 Charcters long" name="password">
+                    <small id="passwordHelp" class="form-text text-muted">Charcacters muct include at least one uppercase letter, one Lowercase letter, number
                       and special character</small>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Confirm Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    <small id="passwordHelp" class="form-text text-muted">Your password is encrypted and protected</small>
+                    <label for="exampleInputPassword2">Confirm Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" name="cpassword">
+                    <small id="passwordHelp1" class="form-text text-muted">Your password is encrypted and protected</small>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Contact</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Phone Number">
+                    <label for="exampleInputContact">Contact</label>
+                    <input type="email" class="form-control" id="exampleInputContact" aria-describedby="emailHelp" placeholder="Enter Your Phone Number" name="contact">
                     <div class="form-check">
                 </div>
                 <p></p>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">School</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What School do you currently attend?">
+                    <label for="exampleInputSchool">School</label>
+                    <input type="email" class="form-control" id="exampleInputSchool" aria-describedby="emailHelp" placeholder="What School do you currently attend?"name="school">
                     <div class="form-check">
                 </div>
                 <p></p>
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">Classification</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
+                  <select class="form-control" id="exampleFormControlSelect1" name="classification">
                     <option>Freshman</option>
                     <option>Sophomore</option>
                     <option>Junior</option>
@@ -121,8 +121,8 @@
                   </select>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Major</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What is your Major">
+                    <label for="exampleInputMajor">Major</label>
+                    <input type="email" class="form-control" id="exampleInputMajor" aria-describedby="emailHelp" placeholder="What is your Major" name="major">
                     <div class="form-check">
                 </div>
                 <p></p>
@@ -162,55 +162,27 @@
                           I choose not to disclose my gender
                         </label>
                   </div>
-                </fieldset>
+                    </fieldset>
                 <p></p>
                 <p></p>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect2">Classes You need help with:</label>
-                    <select multiple class="form-control" id="exampleFormControlSelect2">
-                      <option>Mathematics</option>
-                      <option>Sciences</option>
-                      <option>Technology</option>
-                      <option>Humanities, Music & Arts</option>
-                      <option>Buisness</option>
-                    </select>
-                </div>
-                <p></p>
-                <p></p>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">Have you ever taken the class prior to this Semester</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>No, This is the first time</option>
-                    <option>Yes, I have taken this class in the past</option>
-                    <option>Yes, I have taken this class multiple times in the past</option>
-                  </select>
-                </div>
-                <p></p>
-                <p></p>
-                <label>What areas of the subject do you need more focus with?</label>
-                <div class="input-group">
-                  <textarea class="form-control" aria-label="With textarea", placeholder="Such as Assignments, Test preparations and so on"></textarea>
-                </div>
-                <p></p>
-                <p></p>
-                <label>Do you have any restriction, tutor comments or schedule prefrences?</label>
-                <div class="input-group">
-                  <textarea class="form-control" aria-label="With textarea", placeholder="Type N/A if you don't have anything else to add"></textarea>
-                </div>
-                <p>   </p>
-                <p>   </p>
+
+
+
+
               </form>
               <p></p>
               <p></p>
               <p></p>
               <p></p>
+
               <p>Do you agree that all information is accurate? If so please Register: <a class="btn btn-primary" href="#" role="button"> Register</a></p>
               <p></p>
               <p></p>
             </div>
         </div>
-        <div class="col col-sm-1"></div>
         </div>
+        <div class="col col-sm-1"></div>
+
       </div>
 
 
