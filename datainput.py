@@ -2,7 +2,7 @@
 
 from flask import Flask, render_template,request,flash,session
 from flask_sqlalchemy import SQLAlchemy
-import psycopg2
+from OpenSSL import SSL
 from wtforms import Form,  validators, StringField,PasswordField
 from wtforms.fields.html5 import EmailField
 from wtforms.validators import InputRequired,ValidationError,DataRequired
@@ -10,7 +10,8 @@ from password import *
 from flask_login import logout_user,LoginManager,login_required,login_user
 from flask_migrate import Migrate, MigrateCommand
 from sqlalchemy.exc import *
-from functools import wraps
+import emailing
+
 app =Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:0270091294@localhost/students'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
@@ -22,7 +23,9 @@ login_manager.init_app(app)
 
 migrate = Migrate(app, db)
 
-
+#context =SSL.Context(SSL.TLSv1_2_METHOD)
+#context.use_certificate("mycert.crt")
+#context.use_privatekey("myprivate.key")
 
 
 class Data(db.Model):
@@ -54,9 +57,24 @@ class Data(db.Model):
     def is_active(self):
         return True
 
+class StudentData(db.Model):
+    __tablename__ = "schedulesignup"
+    id = db.Column(db.Integer, primary_key=True)
+    Preferedname = db.Column(db.String(120))
+    Classes = db.Column(db.String(120))
+    Taken = db.Column(db.String(120))
+    Areas = db.Column(db.String(120))
+    Comment = db.Column(db.String(120))
+
+    def __init__(self,Preferedname,Classes,Taken,Areas,Comment):
+        self.Preferedname = Preferedname
+        self.Classes =Classes
+        self.Taken = Taken
+        self.Areas = Areas
+        self.Comment = Comment
 
 class Tutor(db.Model):
-    __tablename__="tutorsignup"
+    __tablename__= "tutorsignup"
     id = db.Column(db.Integer, primary_key=True)
     Firstname = db.Column(db.String(120))
     Lastname = db.Column(db.String(120))
@@ -106,6 +124,14 @@ class ReusableForm(Form):
     major = StringField('Name:', validators=[DataRequired()])
     gridRadios = StringField('Name:', validators=[DataRequired()])
 
+class StudentForm(Form):
+    pname = StringField('Name:', validators=[DataRequired()])
+    textarea1 = StringField('Name:', validators=[DataRequired()])
+    choice = StringField('Email:', validators=[DataRequired()])
+    help = StringField('Name:', validators=[DataRequired()])
+    comment = StringField('Email:', validators=[DataRequired()])
+
+
 
 @app.route("/")
 def index():
@@ -115,7 +141,7 @@ def index():
 def login():
     form = ReusableForm(request.form)
     if request.method == "POST" and form.validate():
-        firstname =request.form["firstname"]
+        firstname = request.form["firstname"]
         lastname = request.form["lastname"]
         email = request.form["email"]
         password = request.form["password"]
@@ -161,13 +187,13 @@ def signedin():
         pword = request.form["studentpassword"]
         print(pword)
         hashedpassword = db.session.query(Data.Password).filter(Data.Email == email).scalar()
-        user = db.session.query(Data.Email).filter(Data.Email==email).scalar()
+        user = db.session.query(Data.Email).filter(Data.Email == email).scalar()
 
 
         if db.session.query(Data).filter(Data.Email == email).count() == 1 and check_password(hashedpassword,pword) == True:
-            session["log"]=True
+            session["log"] = True
             flash("login success")
-            return render_template("thanks.html")
+            return render_template("mainStudent.html")
 
 
         flash("Invalid Username and password")
@@ -183,6 +209,23 @@ def logout():
     flash("loggout succesfully")
     return render_template("welcome.html")
 
+@app.route("/confirmation",methods=["POST"])
+def confirmation():
+    form = StudentForm(request.form)
+    if request.method == "POST" and form.validate():
+        preferedname = request.form["pname"]
+        email = request.form["email"]
+        classes = request.form["textarea1"]
+        choice = request.form["choice"]
+        areas = request.form["help"]
+        comment = request.form["comment"]
+        stud=StudentData(preferedname,classes,choice,areas,comment)
+        db.session.add(stud)
+        db.session.commit()
+        emailing.send_email(preferedname,classes,email)
+        return render_template("confirmStudent.html")
+    flash("all fields are required")
+    return render_template("mainStudent.html")
 
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(debug = True )
