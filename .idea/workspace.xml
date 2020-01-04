@@ -52,11 +52,13 @@
         <counts>
           <entry key="html" value="8" />
           <entry key="py" value="6" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="8" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="6" />
         </counts>
       </usages-collector>
@@ -79,7 +81,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datainput.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-832">
@@ -89,6 +91,15 @@
                 <marker date="1578133325182" expanded="true" signature="2320:2831" ph="..." />
                 <marker date="1578133325182" expanded="true" signature="10340:10344" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -203,6 +214,7 @@
         <option value="$PROJECT_DIR$/templates/mainStudent.html" />
         <option value="$PROJECT_DIR$/templates/confirmStudent.html" />
         <option value="$PROJECT_DIR$/datainput.py" />
+        <option value="$PROJECT_DIR$/.gitignore.txt" />
       </list>
     </option>
   </component>
@@ -474,13 +486,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14697987" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14697987" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5067114" visible="true" weight="0.48652482" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5067114" visible="true" weight="0.48652482" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28794327" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -639,6 +652,13 @@
             <marker date="1578133325182" expanded="true" signature="2320:2831" ph="..." />
             <marker date="1578133325182" expanded="true" signature="10340:10344" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
