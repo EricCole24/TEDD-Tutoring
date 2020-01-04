@@ -16,10 +16,12 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$testing.coverage" NAME="testing Coverage Results" MODIFIED="1577609160708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$Unittests_for_test_login_Test_Tutoring.coverage" NAME="Unittests for test_login.Test_Tutoring Coverage Results" MODIFIED="1577616178429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TEDD_Tutoring$datainput.coverage" NAME="datainput Coverage Results" MODIFIED="1577786726970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TEDD_Tutoring$reverse.coverage" NAME="reverse Coverage Results" MODIFIED="1578045708062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TEDD_Tutoring$datainput.coverage" NAME="datainput Coverage Results" MODIFIED="1578134261589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$TEDD_Tutoring.coverage" NAME="TEDD-Tutoring Coverage Results" MODIFIED="1577275850564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$Unittests_for_test_login_TestWebpage_test_signup.coverage" NAME="Unittests for test_login.TestWebpage.test_signup Coverage Results" MODIFIED="1577773269436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$Unittests_for_test_login_TestWebpage.coverage" NAME="Unittests for test_login.TestWebpage Coverage Results" MODIFIED="1577762916538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TEDD_Tutoring$emailing.coverage" NAME="emailing Coverage Results" MODIFIED="1577875651820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$Unittests_for_test_login_TestWebpage_test_validlogin.coverage" NAME="Unittests for test_login.TestWebpage.test_validlogin Coverage Results" MODIFIED="1577773618562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -48,56 +50,77 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="5" />
-          <entry key="py" value="5" />
+          <entry key="html" value="8" />
+          <entry key="py" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="5" />
-          <entry key="Python" value="5" />
+          <entry key="HTML" value="8" />
+          <entry key="Python" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="5" />
           <entry key="dummy" value="10" />
-          <entry key="html" value="546" />
-          <entry key="py" value="6128" />
+          <entry key="html" value="1015" />
+          <entry key="py" value="8980" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="546" />
+          <entry key="HTML" value="1015" />
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="6133" />
+          <entry key="Python" value="8985" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/datainput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1792">
-              <caret line="224" column="49" selection-start-line="224" selection-start-column="49" selection-end-line="224" selection-end-column="49" />
+            <state relative-caret-position="-832">
+              <caret line="194" column="12" selection-start-line="194" selection-start-column="12" selection-end-line="194" selection-end-column="12" />
               <folding>
-                <element signature="e#2#64#0" expanded="true" />
-                <marker date="1577785910059" expanded="true" signature="1901:2412" ph="..." />
-                <marker date="1577785910059" expanded="true" signature="8410:8550" ph="..." />
+                <element signature="e#1#31#0" expanded="true" />
+                <marker date="1578133325182" expanded="true" signature="2320:2831" ph="..." />
+                <marker date="1578133325182" expanded="true" signature="10340:10344" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/csrf_error.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emailing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="532">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
-                <element signature="e#0#36#0" expanded="true" />
+                <element signature="e#34#70#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reverse.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <marker date="1578045708027" expanded="true" signature="22:63" ph="..." />
               </folding>
             </state>
           </provider>
@@ -106,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/mainStudent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="128" column="96" selection-start-line="128" selection-start-column="96" selection-end-line="128" selection-end-column="96" />
+            <state relative-caret-position="280">
+              <caret line="87" column="69" selection-start-line="87" selection-start-column="69" selection-end-line="87" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -115,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-321">
-              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="-264">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
               <folding>
                 <element signature="e#17#28#0" expanded="true" />
                 <marker date="1577773618534" expanded="true" signature="153:160" ph="..." />
@@ -129,14 +152,18 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/confirmStudent.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="78" column="49" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/thanks.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+            <state relative-caret-position="550">
+              <caret line="73" column="7" selection-end-line="73" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -144,24 +171,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/welcome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="106" column="83" selection-start-line="106" selection-start-column="83" selection-end-line="106" selection-end-column="83" />
+            <state relative-caret-position="308">
+              <caret line="100" column="83" selection-start-line="100" selection-start-column="83" selection-end-line="100" selection-end-column="83" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/StudentReg.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="198" column="177" selection-start-line="198" selection-start-column="87" selection-end-line="198" selection-end-column="177" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/password.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -169,23 +182,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/welcome.html" />
         <option value="$PROJECT_DIR$/test_signup.py" />
         <option value="$PROJECT_DIR$/templates/thanks.html" />
-        <option value="$PROJECT_DIR$/templates/StudentReg.html" />
         <option value="$PROJECT_DIR$/testing.py" />
         <option value="$PROJECT_DIR$/test_login.py" />
-        <option value="$PROJECT_DIR$/templates/mainStudent.html" />
-        <option value="$PROJECT_DIR$/datainput.py" />
         <option value="$PROJECT_DIR$/emailing.py" />
+        <option value="$PROJECT_DIR$/templates/StudentReg.html" />
+        <option value="$PROJECT_DIR$/templates/csrf_error.html" />
+        <option value="$PROJECT_DIR$/templates/ooo.html" />
+        <option value="$PROJECT_DIR$/reverse.py" />
+        <option value="$PROJECT_DIR$/templates/welcome.html" />
+        <option value="$PROJECT_DIR$/templates/mainStudent.html" />
+        <option value="$PROJECT_DIR$/templates/confirmStudent.html" />
+        <option value="$PROJECT_DIR$/datainput.py" />
       </list>
     </option>
   </component>
@@ -196,8 +213,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="892" />
-    <option name="y" value="87" />
+    <option name="x" value="928" />
+    <option name="y" value="161" />
     <option name="width" value="963" />
     <option name="height" value="810" />
   </component>
@@ -294,6 +311,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="emailing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TEDD-Tutoring" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/emailing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="reverse" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TEDD-Tutoring" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reverse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="TEDD-Tutoring" type="Python.FlaskServer" factoryName="Flask server">
       <module name="TEDD-Tutoring" />
       <option name="target" value="$PROJECT_DIR$/datainput.py" />
@@ -307,21 +368,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test_login.TestWebpage" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="TEDD-Tutoring" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_login.TestWebpage&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for test_login.TestWebpage.test_signup" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -354,36 +400,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_login.Test_Tutoring" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="TEDD-Tutoring" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_login.Test_Tutoring&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Flask server.TEDD-Tutoring" />
       <item itemvalue="Python.datainput" />
-      <item itemvalue="Python tests.Unittests for test_login.Test_Tutoring" />
-      <item itemvalue="Python tests.Unittests for test_login.TestWebpage" />
       <item itemvalue="Python tests.Unittests for test_login.TestWebpage.test_validlogin" />
       <item itemvalue="Python tests.Unittests for test_login.TestWebpage.test_signup" />
+      <item itemvalue="Python.emailing" />
+      <item itemvalue="Python.reverse" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.datainput" />
+        <item itemvalue="Python.reverse" />
+        <item itemvalue="Python.emailing" />
         <item itemvalue="Python tests.Unittests for test_login.TestWebpage.test_validlogin" />
         <item itemvalue="Python tests.Unittests for test_login.TestWebpage.test_signup" />
-        <item itemvalue="Python tests.Unittests for test_login.TestWebpage" />
-        <item itemvalue="Python tests.Unittests for test_login.Test_Tutoring" />
       </list>
     </recent_temporary>
   </component>
@@ -443,15 +474,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0020134228" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14697987" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5067114" weight="0.364539" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5067114" visible="true" weight="0.48652482" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.28794327" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
@@ -459,7 +489,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.49328858" side_tool="true" weight="0.4638298" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32340425" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.26241136" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -497,6 +527,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/reverse.py</url>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test_signup.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -508,24 +548,27 @@
     <entry file="file://$PROJECT_DIR$/password.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/thanks.html">
+    <entry file="file://$PROJECT_DIR$/templates/StudentReg.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+        <state relative-caret-position="70">
+          <caret line="83" column="37" lean-forward="true" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/welcome.html">
+    <entry file="file://$PROJECT_DIR$/emailing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="106" column="83" selection-start-line="106" selection-start-column="83" selection-end-line="106" selection-end-column="83" />
+        <state relative-caret-position="532">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#34#70#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-321">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="-264">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
             <marker date="1577773618534" expanded="true" signature="153:160" ph="..." />
@@ -535,41 +578,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/confirmStudent.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/StudentReg.html">
+    <entry file="file://$PROJECT_DIR$/templates/csrf_error.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="198" column="177" selection-start-line="198" selection-start-column="87" selection-end-line="198" selection-end-column="177" />
+        <state relative-caret-position="98">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/thanks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="73" column="7" selection-end-line="73" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reverse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <marker date="1578045708027" expanded="true" signature="22:63" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ooo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="100" column="83" selection-start-line="100" selection-start-column="83" selection-end-line="100" selection-end-column="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/mainStudent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="128" column="96" selection-start-line="128" selection-start-column="96" selection-end-line="128" selection-end-column="96" />
+        <state relative-caret-position="280">
+          <caret line="87" column="69" selection-start-line="87" selection-start-column="69" selection-end-line="87" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/confirmStudent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="78" column="49" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/datainput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1792">
-          <caret line="224" column="49" selection-start-line="224" selection-start-column="49" selection-end-line="224" selection-end-column="49" />
+        <state relative-caret-position="-832">
+          <caret line="194" column="12" selection-start-line="194" selection-start-column="12" selection-end-line="194" selection-end-column="12" />
           <folding>
-            <element signature="e#2#64#0" expanded="true" />
-            <marker date="1577785910059" expanded="true" signature="1901:2412" ph="..." />
-            <marker date="1577785910059" expanded="true" signature="8410:8550" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emailing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#1#31#0" expanded="true" />
+            <marker date="1578133325182" expanded="true" signature="2320:2831" ph="..." />
+            <marker date="1578133325182" expanded="true" signature="10340:10344" ph="..." />
           </folding>
         </state>
       </provider>

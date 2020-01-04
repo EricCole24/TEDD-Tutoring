@@ -25,6 +25,8 @@
   <body>
       <!-- NavBar Start -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed">
+
+
         <a class="navbar-brand" href="#">TEDD</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -53,6 +55,8 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
+              <a class="navbar-brand" href="{{ url_for("logout") }}">logout</a>
+              <a class="navbar-brand" href="{{ url_for("delete") }}">delete</a>
             <input class="form-control mr-sm-2" type="search" placeholder="Search for Classes or Tutors" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
@@ -68,11 +72,15 @@
         </div>
         <div class="col-lg-10">
             <!-- Jumbotron -->
+
             <div class="jumbotron">
               <h1 class="display-4">Congratulations, You did it!</h1>
-              <h2>Thank you for starting this journey with us</h2>
+                {% if current_user.is_authenticated %}
+              <h2>Thank {{ current_user.Firstnama }}! you for starting this journey with us</h2>
               <p class="lead">You should recieve a confirmation email, and would be contacted through this email very soon with details.</p>
             </div>
+             {% else %}
+              {% endif %}
         <div class="col col-sm-1">
             </div>
         </div>
