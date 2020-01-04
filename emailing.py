@@ -17,7 +17,7 @@ def send_email(name, classes, email):
     """
 
     from_email = "info.syst12@gmail.com"
-    from_password = "development9!"
+    from_password = ""
     to_email = email
     subject = "Tutoring Schedule"
     message = "Hey <strong>{}</strong> we appreacte your " \
