@@ -282,7 +282,7 @@ def signedin():
             flash("login success")
             return redirect(url_for("mainpage"))
         flash("Invalid Username or password")
-        return redirect(url_for("index"))
+        return render_template("welcome.html")
 
 
 @app.route("/logout")
@@ -310,10 +310,10 @@ def confirmation():
         stud=StudentData(preferedname, classes, day, date, time, choice, areas, comment, data_id)
         db.session.add(stud)
         db.session.commit()
-        #emailing.send_email(preferedname,day,date,time,classes,email)
-        t1 = threading.Thread(target=emailing.send_email, args=(preferedname,day,date,time,classes,email))
-        t1.start()
-        return redirect(url_for("confirmation"))
+        emailing.send_email(preferedname,day,date,time,classes,email)
+        #t1 = threading.Thread(target=emailing.send_email, args=(preferedname,day,date,time,classes,email))
+        #t1.start()
+        return render_template("confirmStudent.html")
     flash("all fields are required")
     return render_template("mainStudent.html")
 
@@ -358,8 +358,10 @@ def explore():
         return render_template("404.html")
 
 
-
-
+@app.route('/confirmed')
+@login_required
+def confirmed():
+    render_template("confirmStudent.html")
 
 if __name__ == '__main__':
     app.run(debug= False)
