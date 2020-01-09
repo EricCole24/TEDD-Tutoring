@@ -19,7 +19,8 @@ from sentry_sdk.integrations.sqlalchemy import SqlalchemyIntegration
 import threading
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0270091294@localhost/students'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0270091294@localhost/students'
+app.config['SQLALCHEMY_DATABASE_URI']= 'postgres://suycphndnkunkv:2619b47f59858a9d3849834c1ff425d7c237a8626f3dca0da805bb6033b5ef75@ec2-107-20-230-70.compute-1.amazonaws.com:5432/dc7hidu3ph7idk?sslmode=require'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 #app.config['WHOOSH_BASE']='whoosh'
@@ -288,7 +289,7 @@ def signedin():
 @login_required
 def logout():
     logout_user()
-    flash("loggout succesfully")
+    flash("loggout succesfull")
     return redirect(url_for("index"))
 
 
@@ -321,12 +322,12 @@ def confirmation():
 @login_required
 def delete():
     if current_user.is_authenticated:
-        db.session.query(Data).filter(Data.Email == current_user.Email).delete()
+        x = db.session.query(Data).get(current_user.id)
+        db.session.delete(x)
         db.session.commit()
         flash("We are sorry to see you go. You can always sign up with us again")
         return redirect(url_for("index"))
-    flash("email does not exist")
-    return render_template("ooo.html")
+
 
 
 @app.errorhandler(404)
@@ -357,10 +358,7 @@ def explore():
         return render_template("404.html")
 
 
-@app.route('/search')
-def search():
-    posts = StudentData.query.whoosh_search(request.args.get('query')).all()
-    return render_template("post.html", posts = posts)
+
 
 
 if __name__ == '__main__':
