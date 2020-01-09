@@ -1,0 +1,13 @@
+{% extends 'admin/master.html' %}
+{% block body %}
+<h1>Authorized personells only</h1>
+    <p> You may have made it her but only authorized users are allowed to view contents on this page</p>
+    {% if not current_user.is_admin %}
+        <p>Sorry, you do not have the priviledges to access this page.<br>
+        Click back to return to the home page
+        </p>
+    <p><a href="{{ url_for('mainpage') }}" methods="post">Back</a></p>
+    {% else %}
+        <p>Congratulations. Looks like you have access to this page</p>
+    {% endif %}
+{% endblock %}

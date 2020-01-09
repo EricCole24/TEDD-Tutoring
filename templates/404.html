@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <style>
+    h1{
+        text-align: center ;
+        padding-top: 120px;
+    }
+    p{text-align: center;
+    }
+    body{
+        background-image: url("https://as1.ftcdn.net/jpg/01/86/13/76/500_F_186137618_wGeGm1feIgbXb24Mp1Y2YmeoTzDyXipK.jpg");
+    }
+
+
+    </style>
+    <h1>OOPS, PAGE DOES NOT EXIST</h1>
+    <p><a href="{{ url_for('mainpage') }}" methods="post">Back</a></p>
+{% endblock %}

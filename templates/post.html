@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+}
+table{
+    padding-top: 30px;
+}
+</style>
+    <h1> Details About Scheduled Tutoring </h1>
+
+
+ <table id="customers">
+
+ <tr>
+
+     <th>Firstname</th>
+     <th>Lastname</th>
+     <th>Time Scheduled </th>
+     <th>Date Scheduled</th>
+     <th>Comment about the schedule</th>
+     <th>Area Needing help with</th>
+     <th>Day of Tutoring</th>
+
+ </tr>
+     {% for post in posts.items %}
+        <tr >
+            <td>{{ post.user.Firstname }}</td>
+            <td>{{ post.user.Lastname }}</td>
+            <td>{{ post.Time }}</td>
+            <td>{{ post.Date }}</td>
+        <td>{{ post.Comment }}</td>
+        <td>{{ post.Classes }}</td>
+        <td>{{ post.Day }}</td>
+        </tr>
+{% endfor %}
+    </table>
+{% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+      {% if page_num %}
+        {% if posts.page == page_num %}
+          <a class="btn btn-info mb-4" href="{{ url_for('explore', page=page_num) }}">{{ page_num }}</a>
+        {% else %}
+          <a class="btn btn-outline-info mb-4" href="{{ url_for('explore', page=page_num) }}">{{ page_num }}</a>
+        {% endif %}
+      {% else %}
+        ...
+      {% endif %}
+    {% endfor %}
+
+
+{% endblock %}

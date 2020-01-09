@@ -1,0 +1,5 @@
+migrations
+new
+reports
+whoosh
+__pycache
