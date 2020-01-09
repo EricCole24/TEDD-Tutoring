@@ -1,0 +1,63 @@
+{% extends 'admin/master.html' %}
+{% block body %}
+<style>
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+table{
+    padding-top: 70px;
+}
+</style>
+    <h1> Details About Scheduled Tutoring </h1>
+
+
+
+ <table id="customers">
+
+ <tr>
+
+     <th>Firstname</th>
+     <th>Lastname</th>
+     <th>Time Scheduled </th>
+     <th>Date Scheduled</th>
+     <th>Comment about the schedule</th>
+     <th>Area Needing help with</th>
+     <th>Day of Tutoring</th>
+
+ </tr>
+     {% for post in posts %}
+        <tr >
+            <td>{{ post.user.Firstname }}</td>
+            <td>{{ post.user.Lastname }}</td>
+            <td>{{ post.Time }}</td>
+            <td>{{ post.Date }}</td>
+        <td>{{ post.Comment }}</td>
+        <td>{{ post.Classes }}</td>
+        <td>{{ post.Day }}</td>
+        </tr>
+{% endfor %}
+    </table>
+{% endblock %}

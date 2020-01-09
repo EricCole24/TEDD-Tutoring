@@ -1,29 +1,34 @@
 """
 DOCSTRING
-emailing users
+This function automatically sends individuals
+who book tutoring appointments the details of their schedule
 """
 
 from email.mime.text import MIMEText
 import smtplib
 
 
-def send_email(name, classes, email):
+def send_email(name, day, date, time, classes, email):
     """
 
+    :param day:
+    :param date:
+    :param time:
     :param name: registered user name
     :param classes: classes needing help with
     :param email: email address for sending information
     :return:
     """
 
-    from_email = "info.syst12@gmail.com"
-    from_password = ""
+    from_email = "teddtutor@gmail.com"
+    from_password = "erichime"
     to_email = email
     subject = "Tutoring Schedule"
     message = "Hey <strong>{}</strong> we appreacte your " \
-              "effort in booking and appointment." \
+              "effort in scheduling an appointment for <strong>{} </strong> <strong>{}</strong> " \
+              "at <strong>{}</strong> ." \
               "Someone with experience " \
-              "in <strong>{}</strong> will be contacting you soon".format(name, classes)
+              "in <strong>{}</strong> will be contacting you soon".format(name, day, date, time, classes)
 
     msg = MIMEText(message, 'html')
     msg['Subject'] = subject

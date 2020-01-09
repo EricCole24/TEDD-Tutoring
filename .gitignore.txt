@@ -1,4 +1,5 @@
-*.pyc
+migrations
 new
-*.ini
-*.mako
+reports
+whoosh
+__pycache

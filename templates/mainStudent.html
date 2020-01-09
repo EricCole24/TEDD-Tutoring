@@ -23,9 +23,9 @@
 
   <body>
       <!-- NavBar Start -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed">
           {% if current_user.is_authenticated  %}
-        <a class="navbar-brand" href="#">TEDD</a>
+        <a class="navbar-brand" href="{{ url_for("explore") }}">ScheduleTable</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,33 +33,27 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{{ url_for("index") }}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Schedule</a>
+              <a class="nav-link" href="{{ url_for("mainpage") }}">Schedule</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Available Tutoring Classes </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Freshman Classes</a>
-                <a class="dropdown-item" href="#">Sophormore Classes</a>
-                  <a class="dropdown-item" href="#">Junior Classes</a>
-                  <a class="dropdown-item" href="#">Senior/GRE classes</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Request SAT Guidance</a>
-              </div>
+            <li class="nav-item ">
+                {% if current_user.is_admin %}
+              <a class="nav-link" href="/admin">TutorsOnly</a>
+                    {% else %}
+          {% endif %}
             </li>
 
           </ul>
 
-            <a class="navbar-brand" href="{{ url_for("logout") }}">logout</a>
-            <a class="navbar-brand" href="{{ url_for("delete") }}">delete</a>
+            <a class="navbar-brand" href="{{ url_for("logout") }}">Logout</a>
+            <a class="navbar-brand" href="{{ url_for("delete") }}">DeleteAccount</a>
 
-          <form class="form-inline my-2 my-lg-0">
+          <!--form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search for Classes or Tutors" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          </form-->
         </div>
           {% else %}
           {% endif %}
@@ -150,6 +144,24 @@
                       <option>Humanities, Music & Arts</option>
                       <option>Buisness</option>
                     </select>
+                </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect2">Available Days:</label>
+                    <select class="form-control" name= "textarea2"  id="exampleFormControlSelect2" required>
+                      <option>Monday</option>
+                      <option>Tuesday</option>
+                      <option>Wednday</option>
+                      <option>Thursday</option>
+                      <option>Friday</option>
+                    </select>
+                </div>
+                  <div class="form-group">
+                    <label for="exampleInputdate">Date </label>
+                    <input type="date" class="form-control" id="exampleInputdate" name="date" aria-describedby="emailHelp" placeholder="Enter your email address" required>
+                </div>
+                  <div class="form-group">
+                    <label for="exampleInputdate">Time</label>
+                    <input type="time" class="form-control" id="exampleInputdate" name="time" aria-describedby="emailHelp" placeholder="Enter your email address" required>
                 </div>
                 <p></p>
                 <p></p>
