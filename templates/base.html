@@ -37,7 +37,7 @@
               <a class="nav-link" href="{{ url_for("mainpage") }}">Schedule</a>
             </li>
             <li class="nav-item">
-                {% if current_user.isadmin %}
+                {% if current_user.is_admin %}
               <a class="nav-link" href="/admin">TutorsOnly</a>
                 {% else %}
           {% endif %}
