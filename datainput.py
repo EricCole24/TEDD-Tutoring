@@ -363,5 +363,34 @@ def explore():
 def confirmed():
     render_template("confirmStudent.html")
 
+@app.after_request
+def add_header(response):
+    response.headers['X-Frame-Options'] = 'SAMEORIGIN'
+    return response
+
+@app.after_request
+def add_header1(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    return response
+
+@app.after_request
+def add_header2(response):
+    response.headers['X-XSS-Protection'] = '1; mode=block'
+    return response
+
+@app.after_request
+def add_header3(response):
+    response.headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'
+    return response
+
+@app.after_request
+def add_header4(response):
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    return response
+
+
+
+
+
 if __name__ == '__main__':
     app.run(debug= False)

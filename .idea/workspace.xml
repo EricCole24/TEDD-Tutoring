@@ -9,7 +9,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$testing.coverage" NAME="testing Coverage Results" MODIFIED="1577609160708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TEDD_Tutoring$Flask__datainput_py_.coverage" NAME="Flask (datainput.py) Coverage Results" MODIFIED="1578612973469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TEDD_Tutoring$Flask__datainput_py_.coverage" NAME="Flask (datainput.py) Coverage Results" MODIFIED="1578632109488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$Unittests_for_test_login_Test_Tutoring.coverage" NAME="Unittests for test_login.Test_Tutoring Coverage Results" MODIFIED="1577616178429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$reverse.coverage" NAME="reverse Coverage Results" MODIFIED="1578045708062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$datainput.coverage" NAME="datainput Coverage Results" MODIFIED="1578583929638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -50,13 +50,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="15" />
-          <entry key="py" value="67" />
+          <entry key="py" value="139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="15" />
-          <entry key="Python" value="67" />
+          <entry key="Python" value="139" />
         </counts>
       </usages-collector>
     </session>
@@ -66,11 +66,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/datainput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="314" column="8" selection-start-line="314" selection-start-column="8" selection-end-line="314" selection-end-column="8" />
+            <state relative-caret-position="83">
+              <caret line="367" column="54" selection-start-line="367" selection-start-column="54" selection-end-line="367" selection-end-column="54" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
-                <marker date="1578613687253" expanded="true" signature="13219:13264" ph="..." />
+                <marker date="1578632109465" expanded="true" signature="13430:13435" ph="..." />
+                <marker date="1578632109465" expanded="true" signature="13560:13923" ph="..." />
+                <marker date="1578632109465" expanded="true" signature="13918:13919" ph="..." />
               </folding>
             </state>
           </provider>
@@ -215,14 +217,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13221477" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49798658" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49798658" visible="true" weight="0.23829788" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28794327" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -296,11 +297,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/datainput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="314" column="8" selection-start-line="314" selection-start-column="8" selection-end-line="314" selection-end-column="8" />
+        <state relative-caret-position="83">
+          <caret line="367" column="54" selection-start-line="367" selection-start-column="54" selection-end-line="367" selection-end-column="54" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-            <marker date="1578613687253" expanded="true" signature="13219:13264" ph="..." />
+            <marker date="1578632109465" expanded="true" signature="13430:13435" ph="..." />
+            <marker date="1578632109465" expanded="true" signature="13560:13923" ph="..." />
+            <marker date="1578632109465" expanded="true" signature="13918:13919" ph="..." />
           </folding>
         </state>
       </provider>
