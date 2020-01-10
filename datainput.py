@@ -19,7 +19,7 @@ from sentry_sdk.integrations.sqlalchemy import SqlalchemyIntegration
 import threading
 app = Flask(__name__)
 
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0270091294@localhost/students'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0270091294@localhost/students'
 app.config['SQLALCHEMY_DATABASE_URI']= 'postgres://yoogwgjgkgmuzf:b0e8d86313ed45178f710cdb2006da017f0e64e42ef685f350385c931ba0758b@ec2-174-129-254-226.compute-1.amazonaws.com:5432/d104c2unu0s8ni?sslmode=require'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
@@ -274,6 +274,7 @@ def signup():
 
 
 @app.route("/signedin", methods = ["POST","GET"])
+@csrf.exempt
 def signedin():
 
     if request.method == "POST":
