@@ -9,7 +9,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$testing.coverage" NAME="testing Coverage Results" MODIFIED="1577609160708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TEDD_Tutoring$Flask__datainput_py_.coverage" NAME="Flask (datainput.py) Coverage Results" MODIFIED="1578632109488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TEDD_Tutoring$Flask__datainput_py_.coverage" NAME="Flask (datainput.py) Coverage Results" MODIFIED="1578633460195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$Unittests_for_test_login_Test_Tutoring.coverage" NAME="Unittests for test_login.Test_Tutoring Coverage Results" MODIFIED="1577616178429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$reverse.coverage" NAME="reverse Coverage Results" MODIFIED="1578045708062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$datainput.coverage" NAME="datainput Coverage Results" MODIFIED="1578583929638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -37,26 +37,26 @@
     <session id="568112891">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="5" />
+          <entry key="html" value="6" />
           <entry key="py" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="5" />
+          <entry key="HTML" value="6" />
           <entry key="Python" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="15" />
-          <entry key="py" value="139" />
+          <entry key="html" value="21" />
+          <entry key="py" value="141" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="15" />
-          <entry key="Python" value="139" />
+          <entry key="HTML" value="21" />
+          <entry key="Python" value="141" />
         </counts>
       </usages-collector>
     </session>
@@ -66,14 +66,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/datainput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="367" column="54" selection-start-line="367" selection-start-column="54" selection-end-line="367" selection-end-column="54" />
+            <state relative-caret-position="419">
+              <caret line="391" column="103" selection-start-line="391" selection-start-column="103" selection-end-line="391" selection-end-column="103" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
-                <marker date="1578632109465" expanded="true" signature="13430:13435" ph="..." />
-                <marker date="1578632109465" expanded="true" signature="13560:13923" ph="..." />
-                <marker date="1578632109465" expanded="true" signature="13918:13919" ph="..." />
+                <marker date="1578633460181" expanded="true" signature="13430:13435" ph="..." />
+                <marker date="1578633460181" expanded="true" signature="13560:14102" ph="..." />
+                <marker date="1578633460181" expanded="true" signature="14097:14098" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ooo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -128,6 +137,7 @@
       <list>
         <option value="$PROJECT_DIR$/templates/welcome.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/ooo.html" />
         <option value="$PROJECT_DIR$/datainput.py" />
       </list>
     </option>
@@ -295,15 +305,22 @@
         <state relative-caret-position="-1890" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ooo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/datainput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="367" column="54" selection-start-line="367" selection-start-column="54" selection-end-line="367" selection-end-column="54" />
+        <state relative-caret-position="419">
+          <caret line="391" column="103" selection-start-line="391" selection-start-column="103" selection-end-line="391" selection-end-column="103" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-            <marker date="1578632109465" expanded="true" signature="13430:13435" ph="..." />
-            <marker date="1578632109465" expanded="true" signature="13560:13923" ph="..." />
-            <marker date="1578632109465" expanded="true" signature="13918:13919" ph="..." />
+            <marker date="1578633460181" expanded="true" signature="13430:13435" ph="..." />
+            <marker date="1578633460181" expanded="true" signature="13560:14102" ph="..." />
+            <marker date="1578633460181" expanded="true" signature="14097:14098" ph="..." />
           </folding>
         </state>
       </provider>

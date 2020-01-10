@@ -387,6 +387,10 @@ def add_header3(response):
 def add_header4(response):
     response.headers['X-Content-Type-Options'] = 'nosniff'
     return response
+@app.after_request
+def add_header5(response):
+    response.headers['Expect-CT'] = 'enforce, max-age=43200, report-uri="https://tedtutor.herokuapp.com/report"'
+    return response
 
 
 
