@@ -39,6 +39,12 @@ sentry_sdk.init(
     dsn="https://990d5ad8be404b839c7441234bae2fef@sentry.io/1871585",
     integrations= [FlaskIntegration(),SqlalchemyIntegration()]
 )
+app.config.update(
+    SESSION_COOKIE_SECURE=True,
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE='Lax',
+)
+
 class Data(db.Model, UserMixin):
     __tablename__= "studentsignup"
     id = db.Column(db.Integer, primary_key = True)
@@ -393,7 +399,7 @@ def add_header5(response):
     return response
 @app.after_request
 def add_header6(response):
-    response.headers['Set-Cookie'] = 'HttpOnly;Secure'
+    response.set_cookie('username', 'flask', secure=True, httponly=True, samesite='Lax')
     return response
 
 
