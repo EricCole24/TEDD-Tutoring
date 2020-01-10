@@ -391,6 +391,10 @@ def add_header4(response):
 def add_header5(response):
     response.headers['Expect-CT'] = 'enforce, max-age=43200, report-uri="https://tedtutor.herokuapp.com/report"'
     return response
+@app.after_request
+def add_header6(response):
+    response.headers['Set-Cookie'] = 'HttpOnly;Secure'
+    return response
 
 
 
