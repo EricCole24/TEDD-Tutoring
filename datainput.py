@@ -23,12 +23,12 @@ from oauthlib.oauth2 import WebApplicationClient
 import os
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0270091294@localhost/students'
-<<<<<<< HEAD
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0270091294@localhost/students'
+
 #app.config['SQLALCHEMY_DATABASE_URI']= 'postgres://suycphndnkunkv:2619b47f59858a9d3849834c1ff425d7c237a8626f3dca0da805bb6033b5ef75@ec2-107-20-230-70.compute-1.amazonaws.com:5432/dc7hidu3ph7idk?sslmode=require'
-=======
+
 app.config['SQLALCHEMY_DATABASE_URI']= 'postgres://yoogwgjgkgmuzf:b0e8d86313ed45178f710cdb2006da017f0e64e42ef685f350385c931ba0758b@ec2-174-129-254-226.compute-1.amazonaws.com:5432/d104c2unu0s8ni?sslmode=require'
->>>>>>> master
+
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 #app.config['WHOOSH_BASE']='whoosh'
@@ -47,20 +47,14 @@ sentry_sdk.init(
     dsn="https://990d5ad8be404b839c7441234bae2fef@sentry.io/1871585",
     integrations= [FlaskIntegration(),SqlalchemyIntegration()]
 )
-<<<<<<< HEAD
-# Configuration
-#GOOGLE_CLIENT_ID = "137807900818-vvuoldvvtrprhpsbum5l28mjps0sjc7j.apps.googleusercontent.com"
-#GOOGLE_CLIENT_SECRET = "KoDKojt6pIqZEasdT4lI6wCx"
-#GOOGLE_DISCOVERY_URL = (
-    #"https://accounts.google.com/.well-known/openid-configuration")
-#client = WebApplicationClient(GOOGLE_CLIENT_ID)
-=======
+
+
 app.config.update(
     SESSION_COOKIE_SECURE=True,
     SESSION_COOKIE_HTTPONLY=True,
     SESSION_COOKIE_SAMESITE='Lax',
 )
->>>>>>> master
+
 
 class Data(db.Model, UserMixin):
     __tablename__= "studentsignup"
