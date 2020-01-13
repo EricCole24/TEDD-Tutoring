@@ -39,6 +39,12 @@
             <li class="nav-item">
               <a class="nav-link" href="{{ url_for("mainpage") }}">Schedule</a>
             </li>
+          <li class="nav-item">
+              <a class="nav-link" href="{{ url_for("question") }}">PostQuestions</a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" href="{{ url_for("comment") }}">ViewQuestions</a>
+            </li>
             <li class="nav-item">
             {% if current_user.is_admin  %}
               <a class="nav-link" href="/admin">TutorsOnly</a>
@@ -102,7 +108,9 @@
                 <p>   </p>
                 <p>   </p>
                     <button type="submit" name="btt" class="btn btn-primary">Sign in</button>
+
               </form>
+
               <p></p>
               <p></p>
               <p>Are you a new Sudent? Sign up: <a class="btn btn-primary" name="ss" href="{{ url_for("signup") }}" role="button"> Sign up</a></p>

@@ -1,3 +1,4 @@
+import json
 from datetime import datetime
 from datetime import timedelta
 from flask import Flask, render_template, request, flash, session, redirect, url_for
@@ -5,6 +6,7 @@ from flask_login import LoginManager, login_user, UserMixin, logout_user, login_
 from flask_migrate import Migrate
 from flask_wtf.csrf import CSRFProtect, CSRFError
 from flask_sqlalchemy import SQLAlchemy
+from pip._vendor import requests
 from sqlalchemy.exc import *
 from wtforms import Form, validators, StringField, PasswordField
 from wtforms.fields.html5 import EmailField
@@ -17,10 +19,12 @@ import sentry_sdk
 from sentry_sdk.integrations.flask import FlaskIntegration
 from sentry_sdk.integrations.sqlalchemy import SqlalchemyIntegration
 import threading
+from oauthlib.oauth2 import WebApplicationClient
+import os
 app = Flask(__name__)
 
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0270091294@localhost/students'
-app.config['SQLALCHEMY_DATABASE_URI']= 'postgres://suycphndnkunkv:2619b47f59858a9d3849834c1ff425d7c237a8626f3dca0da805bb6033b5ef75@ec2-107-20-230-70.compute-1.amazonaws.com:5432/dc7hidu3ph7idk?sslmode=require'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0270091294@localhost/students'
+#app.config['SQLALCHEMY_DATABASE_URI']= 'postgres://suycphndnkunkv:2619b47f59858a9d3849834c1ff425d7c237a8626f3dca0da805bb6033b5ef75@ec2-107-20-230-70.compute-1.amazonaws.com:5432/dc7hidu3ph7idk?sslmode=require'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 #app.config['WHOOSH_BASE']='whoosh'
@@ -39,6 +43,13 @@ sentry_sdk.init(
     dsn="https://990d5ad8be404b839c7441234bae2fef@sentry.io/1871585",
     integrations= [FlaskIntegration(),SqlalchemyIntegration()]
 )
+# Configuration
+#GOOGLE_CLIENT_ID = "137807900818-vvuoldvvtrprhpsbum5l28mjps0sjc7j.apps.googleusercontent.com"
+#GOOGLE_CLIENT_SECRET = "KoDKojt6pIqZEasdT4lI6wCx"
+#GOOGLE_DISCOVERY_URL = (
+    #"https://accounts.google.com/.well-known/openid-configuration")
+#client = WebApplicationClient(GOOGLE_CLIENT_ID)
+
 class Data(db.Model, UserMixin):
     __tablename__= "studentsignup"
     id = db.Column(db.Integer, primary_key = True)
@@ -53,9 +64,10 @@ class Data(db.Model, UserMixin):
     Gender = db.Column(db.String(120))
     is_admin = db.Column(db.Boolean,default=False)
     Role = db.relationship('StudentData',backref ='user', lazy = True)
+    Role2 = db.relationship('Post', backref='user', lazy=True)
 
 
-    def __init__(self, Firstname, Lastname, Email, Password, Contact, School, Classification, Major, Gender):
+    def __init__(self, Firstname: object, Lastname: object, Email: object, Password: object, Contact: object, School: object, Classification: object, Major: object, Gender: object) :
         self.Firstname = Firstname
         self.Lastname= Lastname
         self.Email = Email
@@ -135,6 +147,22 @@ class Tutor(db.Model):
         self.Expertise = Expertise
         self.Reason = Reason
         self.Restriction = Restriction
+
+class Post(db.Model):
+    __tablename__ = "post"
+    id = db.Column(db.Integer, primary_key=True)
+    Body = db.Column(db.String(500))
+    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    Title = db.Column(db.String(140))
+    user_id = db.Column(db.Integer, db.ForeignKey('studentsignup.id'))
+
+    def __init__(self,Body,Title,user_id):
+        self.Body = Body
+        self.Title = Title
+        self.user_id = user_id
+
+
+
 
 
 class ReusableForm(Form):
@@ -352,13 +380,45 @@ def mainpage():
 def explore():
     if current_user.is_authenticated:
         page = request.args.get('page', 1 , type = int)
-        posts = StudentData.query.order_by(StudentData.timestamp.desc()).paginate(page = page, per_page = 4)
+        posts = StudentData.query.order_by(StudentData.timestamp.desc()).paginate(page = page, per_page = 5,css_framework='bootstrap4')
         return render_template('post.html', posts=posts)
     else:
         return render_template("404.html")
 
 
 
+@app.route("/question",methods=["POST","GET"])
+def question():
+
+    return render_template("questions.html")
+
+@app.route("/posted",methods=["POST","GET"])
+@login_required
+def posted():
+    if request.method == "POST":
+        Title = request.form["title"]
+        body = request.form["question"]
+        user_id = current_user.id
+        post = Post(body,Title,user_id = user_id)
+        db.session.add(post)
+        db.session.commit()
+        flash("Your question has posted ")
+        return render_template("questions.html")
+
+@app.route('/comment')
+@login_required
+def comment():
+    if current_user.is_authenticated:
+        page = request.args.get('page', 1 , type = int)
+        posts = Post.query.order_by(Post.timestamp.desc()).paginate(page = page, per_page = 5)
+        return render_template('answers.html', posts=posts)
+    else:
+        return render_template("404.html")
+
+"""@app.before_request
+def det():
+    print("this is",request.form)
+    print("this is", request.headers)"""
 
 
 if __name__ == '__main__':
