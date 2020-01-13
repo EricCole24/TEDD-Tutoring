@@ -24,7 +24,11 @@ import os
 app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0270091294@localhost/students'
+<<<<<<< HEAD
 #app.config['SQLALCHEMY_DATABASE_URI']= 'postgres://suycphndnkunkv:2619b47f59858a9d3849834c1ff425d7c237a8626f3dca0da805bb6033b5ef75@ec2-107-20-230-70.compute-1.amazonaws.com:5432/dc7hidu3ph7idk?sslmode=require'
+=======
+app.config['SQLALCHEMY_DATABASE_URI']= 'postgres://yoogwgjgkgmuzf:b0e8d86313ed45178f710cdb2006da017f0e64e42ef685f350385c931ba0758b@ec2-174-129-254-226.compute-1.amazonaws.com:5432/d104c2unu0s8ni?sslmode=require'
+>>>>>>> master
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 #app.config['WHOOSH_BASE']='whoosh'
@@ -43,12 +47,20 @@ sentry_sdk.init(
     dsn="https://990d5ad8be404b839c7441234bae2fef@sentry.io/1871585",
     integrations= [FlaskIntegration(),SqlalchemyIntegration()]
 )
+<<<<<<< HEAD
 # Configuration
 #GOOGLE_CLIENT_ID = "137807900818-vvuoldvvtrprhpsbum5l28mjps0sjc7j.apps.googleusercontent.com"
 #GOOGLE_CLIENT_SECRET = "KoDKojt6pIqZEasdT4lI6wCx"
 #GOOGLE_DISCOVERY_URL = (
     #"https://accounts.google.com/.well-known/openid-configuration")
 #client = WebApplicationClient(GOOGLE_CLIENT_ID)
+=======
+app.config.update(
+    SESSION_COOKIE_SECURE=True,
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE='Lax',
+)
+>>>>>>> master
 
 class Data(db.Model, UserMixin):
     __tablename__= "studentsignup"
@@ -296,6 +308,7 @@ def signup():
 
 
 @app.route("/signedin", methods = ["POST","GET"])
+@csrf.exempt
 def signedin():
 
     if request.method == "POST":
@@ -310,7 +323,7 @@ def signedin():
             flash("login success")
             return redirect(url_for("mainpage"))
         flash("Invalid Username or password")
-        return redirect(url_for("index"))
+        return render_template("welcome.html")
 
 
 @app.route("/logout")
@@ -341,7 +354,7 @@ def confirmation():
         #emailing.send_email(preferedname,day,date,time,classes,email)
         t1 = threading.Thread(target=emailing.send_email, args=(preferedname,day,date,time,classes,email))
         t1.start()
-        return redirect(url_for("confirmation"))
+        return render_template("confirmStudent.html")
     flash("all fields are required")
     return render_template("mainStudent.html")
 
@@ -384,6 +397,45 @@ def explore():
         return render_template('post.html', posts=posts)
     else:
         return render_template("404.html")
+
+
+@app.route('/confirmed')
+@login_required
+def confirmed():
+    render_template("confirmStudent.html")
+
+@app.after_request
+def add_header(response):
+    response.headers['X-Frame-Options'] = 'SAMEORIGIN'
+    return response
+
+@app.after_request
+def add_header1(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    return response
+
+@app.after_request
+def add_header2(response):
+    response.headers['X-XSS-Protection'] = '1; mode=block'
+    return response
+
+@app.after_request
+def add_header3(response):
+    response.headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'
+    return response
+
+@app.after_request
+def add_header4(response):
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    return response
+@app.after_request
+def add_header5(response):
+    response.headers['Expect-CT'] = 'enforce, max-age=43200, report-uri="https://tedtutor.herokuapp.com/report"'
+    return response
+@app.after_request
+def add_header6(response):
+    response.set_cookie('username', 'flask', secure=True, httponly=True, samesite='Lax')
+    return response
 
 
 

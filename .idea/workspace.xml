@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoTestManager">
-    <enabled-run-configurations>
-      <run-configuration type="tests" name="Rerun Failed Tests" />
-    </enabled-run-configurations>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c8bf440-93af-4113-95e5-a6ee4a138100" name="Default Changelist" comment="" />
+    <list default="true" id="8dea1835-7911-4338-8fcf-593950a0ba0d" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +11,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$testing.coverage" NAME="testing Coverage Results" MODIFIED="1577609160708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TEDD_Tutoring$Flask__datainput_py_.coverage" NAME="Flask (datainput.py) Coverage Results" MODIFIED="1578680477260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$Unittests_for_test_login_Test_Tutoring.coverage" NAME="Unittests for test_login.Test_Tutoring Coverage Results" MODIFIED="1577616178429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$reverse.coverage" NAME="reverse Coverage Results" MODIFIED="1578045708062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TEDD_Tutoring$datainput.coverage" NAME="datainput Coverage Results" MODIFIED="1578954531781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -40,6 +37,7 @@
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="568112891">
+<<<<<<< HEAD
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
@@ -53,38 +51,67 @@
           <entry key="html" value="33" />
           <entry key="py" value="11" />
           <entry key="txt" value="9" />
+=======
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="6" />
+          <entry key="py" value="1" />
+>>>>>>> master
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+<<<<<<< HEAD
           <entry key="HTML" value="33" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="Python" value="11" />
+=======
+          <entry key="HTML" value="6" />
+          <entry key="Python" value="1" />
+>>>>>>> master
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="Python Console" value="5" />
           <entry key="dummy" value="10" />
           <entry key="html" value="3791" />
           <entry key="py" value="13135" />
           <entry key="txt" value="30" />
+=======
+          <entry key="html" value="36" />
+          <entry key="py" value="149" />
+>>>>>>> master
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="HTML" value="3791" />
           <entry key="PLAIN_TEXT" value="40" />
           <entry key="Python" value="13140" />
+=======
+          <entry key="HTML" value="36" />
+          <entry key="Python" value="149" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="1" />
+>>>>>>> master
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/datainput.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="285">
               <caret line="382" column="133" selection-start-line="382" selection-start-column="133" selection-end-line="382" selection-end-column="133" />
               <folding>
@@ -92,19 +119,35 @@
                 <marker date="1578953205440" expanded="true" signature="5758:6189" ph="..." />
                 <marker date="1578953205440" expanded="true" signature="15062:15063" ph="..." />
                 <marker date="1578953205440" expanded="true" signature="15096:15174" ph="..." />
+=======
+            <state relative-caret-position="-3388">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+                <marker date="1578680014796" expanded="true" signature="13565:13570" ph="..." />
+>>>>>>> master
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/templates/TutorReg.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-3075" />
+=======
+        <entry file="file://$PROJECT_DIR$/templates/ooo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="7" />
+            </state>
+>>>>>>> master
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/templates/questions.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
@@ -161,11 +204,28 @@
                 <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/templates/confirmStudent.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/mainStudent.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/welcome.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="4" column="92" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="92" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
@@ -188,6 +248,17 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
               <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+=======
+        <entry file="file://$PROJECT_DIR$/templates/post.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
@@ -205,6 +276,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/test_signup.py" />
         <option value="$PROJECT_DIR$/testing.py" />
         <option value="$PROJECT_DIR$/templates/csrf_error.html" />
@@ -228,6 +300,12 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/mainStudent.html" />
         <option value="$PROJECT_DIR$/templates/welcome.html" />
+=======
+        <option value="$PROJECT_DIR$/templates/welcome.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/ooo.html" />
+        <option value="$PROJECT_DIR$/datainput.py" />
+>>>>>>> master
       </list>
     </option>
   </component>
@@ -238,27 +316,15 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="816" />
     <option name="y" value="106" />
+=======
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+>>>>>>> master
     <option name="width" value="1160" />
     <option name="height" value="810" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State />
-          <State>
-            <id>Python</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>PyArgumentListInspection</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -275,33 +341,7 @@
             <path>
               <item name="TEDD-Tutoring" type="b2602c69:ProjectViewProjectNode" />
               <item name="TEDD-Tutoring" type="462c0819:PsiDirectoryNode" />
-              <item name="new" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TEDD-Tutoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TEDD-Tutoring" type="462c0819:PsiDirectoryNode" />
-              <item name="new" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TEDD-Tutoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TEDD-Tutoring" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TEDD-Tutoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TEDD-Tutoring" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TEDD-Tutoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="TEDD-Tutoring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (TEDD-Tutoring) &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -311,12 +351,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -330,74 +365,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.datainput">
-    <configuration name="datainput" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TEDD-Tutoring" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/datainput.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="emailing" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TEDD-Tutoring" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/emailing.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="reverse" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TEDD-Tutoring" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reverse.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TEDD-Tutoring" type="Python.FlaskServer" factoryName="Flask server">
+  <component name="RunManager">
+    <configuration name="Flask (datainput.py)" type="Python.FlaskServer" factoryName="Flask server" temporary="true" nameIsGenerated="true">
       <module name="TEDD-Tutoring" />
       <option name="target" value="$PROJECT_DIR$/datainput.py" />
       <option name="targetType" value="PATH" />
@@ -405,58 +374,16 @@
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_login.TestWebpage" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="TEDD-Tutoring" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_login.TestWebpage&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test_login.TestWebpage.test_validlogin" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="TEDD-Tutoring" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_login.TestWebpage.test_validlogin&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Flask server.TEDD-Tutoring" />
-      <item itemvalue="Python.datainput" />
-      <item itemvalue="Python tests.Unittests for test_login.TestWebpage.test_validlogin" />
-      <item itemvalue="Python.emailing" />
-      <item itemvalue="Python.reverse" />
-      <item itemvalue="Python tests.Unittests for test_login.TestWebpage" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.datainput" />
-        <item itemvalue="Python.emailing" />
-        <item itemvalue="Python tests.Unittests for test_login.TestWebpage" />
-        <item itemvalue="Python.reverse" />
-        <item itemvalue="Python tests.Unittests for test_login.TestWebpage.test_validlogin" />
+        <item itemvalue="Flask server.Flask (datainput.py)" />
       </list>
     </recent_temporary>
   </component>
@@ -465,7 +392,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8c8bf440-93af-4113-95e5-a6ee4a138100" name="Default Changelist" comment="" />
+      <changelist id="8dea1835-7911-4338-8fcf-593950a0ba0d" name="Default Changelist" comment="" />
       <created>1577271326596</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -473,56 +400,23 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="Unittests_for_test_login_TestWebpage - 2020.01.07 at 01h 36m 57s.xml">
-      <configuration name="Unittests for test_login.TestWebpage" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_login_TestWebpage - 2020.01.07 at 01h 37m 45s.xml">
-      <configuration name="Unittests for test_login.TestWebpage" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_login_TestWebpage - 2020.01.07 at 01h 38m 43s.xml">
-      <configuration name="Unittests for test_login.TestWebpage" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_login_TestWebpage - 2020.01.07 at 01h 39m 31s.xml">
-      <configuration name="Unittests for test_login.TestWebpage" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_login_TestWebpage - 2020.01.07 at 01h 40m 12s.xml">
-      <configuration name="Unittests for test_login.TestWebpage" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_login_TestWebpage - 2020.01.07 at 01h 41m 09s.xml">
-      <configuration name="Unittests for test_login.TestWebpage" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_login_TestWebpage - 2020.01.07 at 01h 42m 05s.xml">
-      <configuration name="Unittests for test_login.TestWebpage" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_login_TestWebpage - 2020.01.07 at 01h 42m 56s.xml">
-      <configuration name="Unittests for test_login.TestWebpage" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_login_TestWebpage - 2020.01.07 at 01h 43m 44s.xml">
-      <configuration name="Unittests for test_login.TestWebpage" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_login_TestWebpage - 2020.01.07 at 01h 45m 02s.xml">
-      <configuration name="Unittests for test_login.TestWebpage" configurationId="tests" />
-    </history-entry>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13557047" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13422818" />
+>>>>>>> master
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49798658" visible="true" weight="0.16028368" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49798658" visible="true" weight="0.1319149" />
+>>>>>>> master
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28794327" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -531,7 +425,11 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.5134752" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" weight="0.0" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" weight="0.32907802" />
+>>>>>>> master
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32815534" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -571,27 +469,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/reverse.py</url>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_signup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/password.py">
+    <entry file="file://$PROJECT_DIR$/templates/mainStudent.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/reverse.py" />
     <entry file="file://$PROJECT_DIR$/templates/csrf_error.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -651,10 +533,22 @@
           <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="92" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/post.html">
+      <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> master
     </entry>
     <entry file="file://$PROJECT_DIR$/requirement.txt" />
     <entry file="file://$PROJECT_DIR$/templates/confirmStudent.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1008">
           <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
         </state>
@@ -718,9 +612,26 @@
           <caret line="74" column="14" lean-forward="true" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
         </state>
       </provider>
+=======
+        <state relative-caret-position="546">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ooo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/confirmStudent.html">
+      <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> master
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/answers.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="238">
           <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
@@ -735,10 +646,18 @@
             <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+        <state relative-caret-position="-3388">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1578680014796" expanded="true" signature="13565:13570" ph="..." />
+>>>>>>> master
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -760,5 +679,7 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> master
   </component>
 </project>
