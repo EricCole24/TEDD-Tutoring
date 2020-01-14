@@ -24,6 +24,12 @@ import threading
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> e2899f8f1e9f4b9edc2a7d055d975e35cada6899
 import os
 
 app = Flask(__name__)
