@@ -62,12 +62,7 @@ sentry_sdk.init(
 )
 
 
-# Configuration
-#GOOGLE_CLIENT_ID = "137807900818-vvuoldvvtrprhpsbum5l28mjps0sjc7j.apps.googleusercontent.com"
-#GOOGLE_CLIENT_SECRET = "KoDKojt6pIqZEasdT4lI6wCx"
-#GOOGLE_DISCOVERY_URL = (
-    #"https://accounts.google.com/.well-known/openid-configuration")
-#client = WebApplicationClient(GOOGLE_CLIENT_ID)
+
 
 
 app.config.update(
