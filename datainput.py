@@ -1,4 +1,4 @@
-import json
+
 from datetime import datetime
 from datetime import timedelta
 from flask import Flask, render_template, request, flash, session, redirect, url_for
@@ -19,8 +19,8 @@ import sentry_sdk
 from sentry_sdk.integrations.flask import FlaskIntegration
 from sentry_sdk.integrations.sqlalchemy import SqlalchemyIntegration
 import threading
-from oauthlib.oauth2 import WebApplicationClient
-import os
+
+
 app = Flask(__name__)
 
 
@@ -30,7 +30,7 @@ app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI']= 'postgres://yoogwgjgkgmuzf:b0e8d86313ed45178f710cdb2006da017f0e64e42ef685f350385c931ba0758b@ec2-174-129-254-226.compute-1.amazonaws.com:5432/d104c2unu0s8ni?sslmode=require'
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0270091294@localhost/students'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0270091294@localhost/students'
 
 #app.config['SQLALCHEMY_DATABASE_URI']= 'postgres://suycphndnkunkv:2619b47f59858a9d3849834c1ff425d7c237a8626f3dca0da805bb6033b5ef75@ec2-107-20-230-70.compute-1.amazonaws.com:5432/dc7hidu3ph7idk?sslmode=require'
 
@@ -403,7 +403,7 @@ def mainpage():
 def explore():
     if current_user.is_authenticated:
         page = request.args.get('page', 1 , type = int)
-        posts = StudentData.query.order_by(StudentData.timestamp.desc()).paginate(page = page, per_page = 5,css_framework='bootstrap4')
+        posts = StudentData.query.order_by(StudentData.timestamp.desc()).paginate(page = page, per_page = 5)
         return render_template('post.html', posts=posts)
     else:
         return render_template("404.html")
