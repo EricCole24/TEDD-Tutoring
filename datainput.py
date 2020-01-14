@@ -19,7 +19,7 @@ import sentry_sdk
 from sentry_sdk.integrations.flask import FlaskIntegration
 from sentry_sdk.integrations.sqlalchemy import SqlalchemyIntegration
 import threading
-from oauthlib.oauth2 import WebApplicationClient
+
 import os
 app = Flask(__name__)
 
