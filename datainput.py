@@ -22,11 +22,11 @@ import threading
 
 
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> b50bb490f2a665b7519977140c78897a8ba87c45
+
+
+
 import os
 
 app = Flask(__name__)
