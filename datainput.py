@@ -20,9 +20,8 @@ from sentry_sdk.integrations.flask import FlaskIntegration
 from sentry_sdk.integrations.sqlalchemy import SqlalchemyIntegration
 import threading
 
-<<<<<<< HEAD
 
-=======
+
 import os
 >>>>>>> 65b927727a820780a200c0e46286cc3ba63adc93
 app = Flask(__name__)
